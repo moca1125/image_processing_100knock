@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_opencv_sample",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", //debug mode
+                "-I./include",
+                "-I/usr/local/include/opencv4",
+                "-L./",
+                "-L/usr/local/lib",
+                "-lopencv_core", "-lopencv_highgui",
+                "-lopencv_imgproc", "-lopencv_calib3d",
+                "-lopencv_gapi", "-lopencv_objdetect",
+                "-lopencv_photo", "-lopencv_dnn",//dnn=about deep learning
+                "-lopencv_imgcodecs", "-lopencv_stitching",
+                "-lopencv_features2d", "-lopencv_video", 
+                "-lopencv_flann", "-lopencv_ml", 
+                "-lopencv_videoio",
+                "-std=c++17",
+                "-o",
+                "build/hello.exe",
+                "-lopencv_xfeatures2d",
+                
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
