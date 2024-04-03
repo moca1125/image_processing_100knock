@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            
             "name": "(gdb) debug_hello", //この命令につける名前
             "type": "cppdbg",
             "request": "launch",

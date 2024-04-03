@@ -26,7 +26,6 @@
                 "-o",
                 "build/hello.exe",
                 "-lopencv_xfeatures2d",
-                
             ],
             "group": {
                 "kind": "build",
