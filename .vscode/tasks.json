@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-g", //debug mode
-                "src/Question_01_10/2.cpp",
+                "src/Question_01_10/3.cpp",
                 "-I./include",
                 "-I/usr/local/include/opencv4",
                 "-L./",
